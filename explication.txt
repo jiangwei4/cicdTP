@@ -1,0 +1,9 @@
+il faut ajouter une règle pour la protection de branch sur GitHub.
+
+
+[votre repository] -> settings -> branches 
+-> branch protections rules -> add rule 
+-> "require status check to pass before merging"
+-> "Travis CI -Branch" -> create
+
+Cela mènera un check des branches avant le merge pour vérifier si tout est bon.
