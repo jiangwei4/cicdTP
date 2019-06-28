@@ -7,6 +7,9 @@ function createBitcoin() {
     return varToRemove
 }
 
+function returnVarToRemove (){
+    return varToRemove
+}
 module.exports = {
     createBitcoin
 };
