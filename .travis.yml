@@ -15,11 +15,11 @@ script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then "./node_modules/.bin/twly"; fi
 
 
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: 
-#   app: cicdtp
-#   on: 
-#     repo: jiangwei4/cicdTP
-#     branch: dev
+deploy:
+  provider: heroku
+  api_key:
+    secure: R4Me7SAR0Qv4EQPnNUmc+JupwvEqW/3qPsq7yJdg4fxxmfht4rf8rKUzLEYnII7w5oDIu79gV99dqEcK5er4RGBC3DyzK0ooDdereszf/8it8iMDmHXmTJBMY5PDoB34YnM+oHdYM+oK0ZE2+Q63Vv5BW95CrRyjfpKZ3L8gw7RDzcOblTSjBE7sKQ4g/ttdY24gcGHaBwetKzS4CRIE48KEC0B88ZCtEAmTTUBuKPrIVR+Vq32KVAyAnIbbRVeQTd6cRoBQNFNnUjPhQhBsTAlrTXkefN13KQ+OanbuniFU3KljldQoACQR+Vi2MBBJ+XTSDG5OEzSuEI3Lquwga6V8RUMLz2777kb+rNz0kRKwAJ2dcG7boCbM3OKCdAisGOaT9xc2kYZqK9x15/1McG6QQzmXuzuZVvUefTctk8H22frPhSuElo1VQKkKgbd0rwsyqN3SA/9WEiQ7vbCNpjw+iHGSxbV/eUNhIggG7SH0aGJSf/Buooy2qojEMK8Az4t4MzMn82hM6oDs/PV9TKdxY+SdkPt5/PsNEDEkJFDyFwhdxJMHpKZ8uOKCuiwohpI0eMj8EjlVjGKFs0ArY0viUmVbkwVwOqxf3j+QQx4442QAp1cE10EAV+IgW9mHvvKVApCVpcqoOB9yoIEmcRxbZujjsbNFRdm9lCxsFrs=
+  app: cicdtp
+  on: 
+    repo: jiangwei4/cicdTP
+    branch: dev
