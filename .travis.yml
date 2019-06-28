@@ -1,5 +1,4 @@
 language: node_js
-sudo: false
 node_js:
   - "12"
 
@@ -9,18 +8,13 @@ cache:
 
 install:
   - npm install
-
-before_script: true
-
 script:
   - echo "Salut" 
-  - './node_modules/.bin/jshint'
+  - './node_modules/.bin/jshint ./src/'
   - './node_modules/.bin/retire'
-  - './node_modules/.bin/twly'
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then "./node_modules/.bin/twly"; fi
 
-after_script: true
 
-# ./node_modules/.bin/
 # deploy:
 #   provider: heroku
 #   api_key:
