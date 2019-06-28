@@ -1,15 +1,10 @@
 function createBitcoin() {
-    console.log('Loading ...')
+    console.log('Loading ...');
 
     setTimeout(() => console.log('Created !'), 1000);
 
-    let varToRemove = true;
-    return varToRemove
 }
 
-function returnVarToRemove (){
-    return varToRemove
-}
 module.exports = {
     createBitcoin
 };
